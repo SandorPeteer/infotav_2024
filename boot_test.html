@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kávézó</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    /* Custom CSS itt */
+    .card {
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fejléc -->
+  <header class="bg-danger text-white m-5 py-5">
+    <div class="container text-center">
+      <h1>MEKI</h1>
+      <p>Frissen pörkölt kávék és finom ételek!</p>
+    </div>
+  </header>
+
+  <!-- Fő tartalom -->
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <!-- Kártyák -->
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="https://images.deliveryhero.io/image/menu-import-gateway-prd/regions/EU/chains/mcd_hungary/07e064d1b1f24ea7de8417c5e9f10f88.jpeg??width=400" class="card-img-top" alt="Kávé 1">
+          <div class="card-body">
+            <h5 class="card-title">Kávéfajta 1</h5>
+            <p class="card-text">Leírás a kávéfajtáról.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+              Részletek
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="https://images.deliveryhero.io/image/menu-import-gateway-prd/regions/EU/chains/mcd_hungary/8eee6618184a76a7620ffd009556653d.jpeg??width=400" class="card-img-top" alt="Kávé 2">
+          <div class="card-body">
+            <h5 class="card-title">Kávéfajta 2</h5>
+            <p class="card-text">Leírás a kávéfajtáról.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+              Részletek
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="https://images.deliveryhero.io/image/menu-import-gateway-prd/regions/EU/chains/mcd_hungary/f765a46a0d16f362e060ccd3c69c147f.jpeg??width=400" class="card-img-top" alt="Kávé 3">
+          <div class="card-body">
+            <h5 class="card-title">Kávéfajta 3</h5>
+            <p class="card-text">Leírás a kávéfajtáról.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+              Részletek
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="https://images.deliveryhero.io/image/menu-import-gateway-prd/regions/EU/chains/mcd_hungary/c368b02029ddf55fc051f8f40ab0baed.jpeg??width=400" class="card-img-top" alt="Kávé 4">
+          <div class="card-body">
+            <h5 class="card-title">Kávéfajta 4</h5>
+            <p class="card-text">Leírás a kávéfajtáról.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
+              Részletek
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Kávéfajta 1 részletei</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Itt jeleníthető meg a Kávéfajta 1 részletes leírása, képekkel, árakkal stb.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+          <button type="button" class="btn btn-primary">Megrendelés</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label">Kávéfajta 2 részletei</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Itt jeleníthető meg a Kávéfajta 2 részletes leírása, képekkel, árakkal stb.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+          <button type="button" class="btn btn-primary">Megrendelés</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label">Kávéfajta 3 részletei</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Itt jeleníthető meg a Kávéfajta 3 részletes leírása, képekkel, árakkal stb.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+          <button type="button" class="btn btn-primary">Megrendelés</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal4Label">Kávéfajta 4 részletei</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Itt jeleníthető meg a Kávéfajta 4 részletes leírása, képekkel, árakkal stb.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+          <button type="button" class="btn btn-primary">Megrendelés</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript és egyéb szükséges fájlok -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

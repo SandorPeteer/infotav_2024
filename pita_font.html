@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pita font</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Rye&display=swap');
+
+        .give-you-glory-regular {
+            font-family: "Give You Glory", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .rye-regular {
+            font-family: "Rye", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="rye-regular">Pitagorasz tétele</h1>
+    <img style="float: left; margin: 20px;" src="https://www.matekmindenkinek.hu/files/article/article_210/Pitagorasz%20t%C3%A9tel_sm.webp"
+        alt="derékszögű">
+    <form action="javascript:calc()" style="margin-top: 50px;">
+        <fieldset style="width: 220px;">
+            <legend>C oldal számolása:</legend>
+            <label for="a">A oldal: </label>
+            <input type="number" name="asd" id="a"><br>
+            <label for="b">B oldal: </label>
+            <input type="number" name="asd" id="b"><br>
+            <label for="c">C oldal: </label>
+            <input type="number" name="asd" id="c" placeholder="szamított c oldal" disabled
+                style="background-color: black;"><br><br>
+            <input type="reset" value="reset" onclick="document.getElementById('c').style.backgroundColor = 'black' ">
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+    <div style="clear: both;"></div>
+    <p class="give-you-glory-regular">A tétel. Bármely derékszögű háromszög leghosszabb oldalának (átfogójának) négyzete
+        megegyezik a másik két oldal
+        (a befogók) négyzetösszegével. Tehát: ha egy háromszög derékszögű, akkor a leghosszabb oldalára emelt négyzet
+        területe a másik két oldalra emelt négyzetek területének összegével egyenlő.</p>
+    <script>
+        function calc() {
+            if (a.value == "") alert("ÍRD BE AZ 'A OLDAL' ÉRTÉKÉT!");
+            if (b.value == "") alert("ÍRD BE A 'B OLDAL' ÉRTÉKÉT!");
+            if (a.value != "" && b.value != "") {
+                document.getElementById('c').style.backgroundColor = "green";
+                document.getElementById('c').style.color = "white";
+                c.value = Math.sqrt(a.value * a.value + b.value * b.value);
+            }
+        }
+    </script>
+</body>
+
+</html>

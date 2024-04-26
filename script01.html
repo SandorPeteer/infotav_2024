@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert</title>
+</head>
+
+<body>
+    <h1>JavaScript felugró ablakok</h1>
+
+    <p>Derékszögű háromszög átfogó számítása!</p>
+    <img src="https://www.idokod.hu/htms/pics/haromszog_90.jpg" alt="háromszög">
+    <br>
+    <input type="button" value="C oldal számítása!" onclick="szamol()">
+
+    <script>
+        function szamol() {
+            let a = Number(prompt("a oldal?"))
+            let b = Number(prompt("b oldal?"))
+            alert("A c-oldal: " + Math.sqrt(a * a + b * b))
+        }
+    </script>
+</body>
+
+</html>
